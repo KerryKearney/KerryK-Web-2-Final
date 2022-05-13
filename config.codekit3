@@ -73,6 +73,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/Homepage\/oneflower.jpg" : {
+      "ft" : 16384,
+      "iS" : 59452,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Homepage\/oneflower.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/Homepage\/plantshelf.jpg" : {
       "ft" : 16384,
       "iS" : 3247935,
