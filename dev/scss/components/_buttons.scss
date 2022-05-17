@@ -1,3 +1,11 @@
 /* =============
     Buttons
 ============= */
+
+button{
+    background-color: $yellow;
+    border: 1px solid $green;
+    padding: 5px 25px;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;
+}

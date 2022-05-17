@@ -358,6 +358,14 @@ template {
 /* =============
     Buttons
 ============= */
+button {
+  background-color: #FFECA8;
+  border: 1px solid #1E4648;
+  padding: 5px 25px;
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+}
+
 /* =============
     Forms
 ============= */
@@ -386,17 +394,17 @@ textarea {
     Footer
 ============= */
 /* =============
-    Header
+    About
 ============= */
 /* =============
-    Header
+    Directory
 ============= */
 /* =============
-    Header
+    Intro
 ============= */
 /* =============
-    Header
+    Newsletter
 ============= */
 /* =============
-    Header
+    Shop
 ============= */
