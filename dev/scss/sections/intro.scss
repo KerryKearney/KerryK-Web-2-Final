@@ -5,4 +5,63 @@
 .intro{
     display: grid;
     text-align: center;
+
+    h1{
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        color: $green;
+
+        @include sm{
+            font-size: 36px;
+        }
+
+        @include lg{
+            font-size: 72px;
+        }
+    }
+
+    h2{
+        font-family: 'lato', sans-serif;
+        font-weight: 400;
+        color: $green;
+
+        @include sm{
+            font-size: 18px;
+        }
+
+        @include md{
+            font-size: 24px;
+        }
+    }
+    
+    p.blocktext{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+        text-justify: inter-word;
+
+            @include sm{
+                width: 150px;
+                font-size: 16px;
+            }
+
+            @include md{
+                width: 325px;
+            }
+
+            @include lg{
+                width: 400px;
+                font-size: 18px;
+            }
+
+            @include xxl{
+                width: 450px;
+            }
+    }
+
+    hr.block{
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+    }
 }

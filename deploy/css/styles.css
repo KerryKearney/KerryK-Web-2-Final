@@ -415,6 +415,32 @@ textarea {
   display: grid;
   text-align: center;
 }
+.intro p.blocktext {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+@media (min-width: 576px) {
+  .intro p.blocktext {
+    width: 150px;
+  }
+}
+@media (min-width: 768px) {
+  .intro p.blocktext {
+    width: 325px;
+  }
+}
+@media (min-width: 1024px) {
+  .intro p.blocktext {
+    width: 400px;
+  }
+}
+.intro hr.block {
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
 
 /* =============
     Newsletter
