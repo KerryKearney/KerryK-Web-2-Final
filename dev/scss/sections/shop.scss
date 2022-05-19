@@ -2,5 +2,14 @@
     Shop
 ============= */
  .shop{
-     background-color: $teal;
+    background-color: $teal;
+    height: 130px;
+
+    .center{
+        text-align: center;    
+    }
+
+    @include md{
+        height: 200px;
+    }
  }

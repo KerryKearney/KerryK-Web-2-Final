@@ -1,3 +1,42 @@
 /* =============
     Directory
 ============= */
+
+.directory{
+    display: grid;
+
+    h1,h2{
+        text-align: center;
+        color: $green;
+        font-family: 'lato', sans-serif;
+    }
+
+    h1{
+        font-weight: 700;
+        font-size: 24px;
+
+        @include lg{
+            font-size: 36px;
+        }
+    }
+
+    h2{
+        font-weight: 300;
+        font-size: 16px;
+
+        @include lg{
+            font-size: 24px;
+        }
+    }
+
+    .directory-content{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 2;
+        gap: 15px;
+
+        @include lg{
+            grid-template-columns: 25% 25% 25% 25%;
+            gap: 15px;
+        }
+    }
+}
