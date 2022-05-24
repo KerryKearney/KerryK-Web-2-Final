@@ -473,8 +473,20 @@ textarea {
 }
 .directory .directory-content {
   grid-template-columns: 50% 50%;
-  grid-template-rows: 2;
+  grid-template-rows: 50% 50%;
   gap: 15px;
+}
+.directory .directory-content .cafe {
+  background-image: url(/deploy/img/Homepage/coffeetable.jpg);
+}
+.directory .directory-content .our-story {
+  background-image: url(/deploy/img/Homepage/glasses.jpg);
+}
+.directory .directory-content .resources {
+  background-image: url(/deploy/img/Homepage/yellowflowers.jpg);
+}
+.directory .directory-content .contact {
+  background-image: url(/deploy/img/Homepage/plantshelf.jpg);
 }
 @media (min-width: 992px) {
   .directory .directory-content {
