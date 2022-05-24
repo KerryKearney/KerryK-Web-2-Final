@@ -42,7 +42,7 @@
       "oAP" : "\/deploy\/img\/Homepage\/bouquet.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -55,7 +55,7 @@
       "oAP" : "\/deploy\/img\/Homepage\/coffeetable.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -68,7 +68,7 @@
       "oAP" : "\/deploy\/img\/Homepage\/glasses.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -94,7 +94,7 @@
       "oAP" : "\/deploy\/img\/Homepage\/plantshelf.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -107,7 +107,7 @@
       "oAP" : "\/deploy\/img\/Homepage\/roundtable.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -120,7 +120,7 @@
       "oAP" : "\/deploy\/img\/Homepage\/twoflowers.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -133,7 +133,7 @@
       "oAP" : "\/deploy\/img\/Homepage\/yellowflowers.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -181,15 +181,18 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/Icons\/logo.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/img\/Icons\/logo.svg",
+    "\/deploy\/img\/Icons\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 14568,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Icons\/logo.png",
       "oF" : 0,
+      "oIPL" : 0,
       "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/img\/Icons\/pin.svg" : {
       "ft" : 2097152,
