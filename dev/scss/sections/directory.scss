@@ -4,6 +4,14 @@
 
 .directory{
     display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 15px;
+
+    @include lg{
+        grid-template-columns: 25% 25% 25% 25%;
+        gap: 15px;
+    }
 
     h1,h2{
         text-align: center;
@@ -30,30 +38,24 @@
     }
 
     .directory-content{
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        gap: 15px;
-        
-        .cafe{
-            background-image: url(/deploy/img/Homepage/coffeetable.jpg);
-        }
-    
-        .our-story{
-            background-image: url(/deploy/img/Homepage/glasses.jpg);
-        }
-    
-        .resources{
-            background-image: url(/deploy/img/Homepage/yellowflowers.jpg);
-        }
-    
-        .contact{
-            background-image: url(/deploy/img/Homepage/plantshelf.jpg);
-        }
+        text-align: center;
+        height: 170px;
 
-        @include lg{
-            grid-template-columns: 25% 25% 25% 25%;
-            gap: 15px;
-        }
+            .cafe{
+                background-image: url(/deploy/img/Homepage/coffeetable.jpg);
+            }
+        
+            .our-story{
+                background-image: url(/deploy/img/Homepage/glasses.jpg);
+            }
+        
+            .resources{
+                background-image: url(/deploy/img/Homepage/yellowflowers.jpg);
+            }
+        
+            .contact{
+                background-image: url(/deploy/img/Homepage/plantshelf.jpg);
+            }
     }
 
 }
