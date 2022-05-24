@@ -81,7 +81,7 @@
       "oAP" : "\/deploy\/img\/Homepage\/oneflower.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -107,7 +107,7 @@
       "oAP" : "\/deploy\/img\/Homepage\/roundtable.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75

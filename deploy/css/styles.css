@@ -361,6 +361,10 @@ template {
   grid-area: content;
 }
 
+.center {
+  text-align: center;
+}
+
 /* =============
     Typography
 ============= */
@@ -399,6 +403,16 @@ textarea {
 /* =============
     Header
 ============= */
+.mobile-header img {
+  width: 75px;
+  height: 48px;
+}
+
+.larger-header img {
+  width: 136px;
+  height: 58px;
+}
+
 /* =============
     Footer
 ============= */
@@ -410,7 +424,7 @@ textarea {
   color: #1E4648;
 }
 .offered h1 {
-  text-align: center;
+  text-align: justify;
   font-weight: 400;
   font-size: 18px;
 }
