@@ -28,13 +28,16 @@
 }
 
 .heart{
-    font-family: 'lato', sans-serif;
-    color: $green;
-    font-weight: 300;
-    font-size: 16px;
 
-    @include md{
-        font-size: 18px;
+    h2{
+        font-family: 'lato', sans-serif;
+        color: $green;
+        font-weight: 300;
+        font-size: 16px;
+
+        @include md{
+            font-size: 18px;
+        }
     }
 }
 
