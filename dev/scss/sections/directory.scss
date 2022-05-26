@@ -8,9 +8,14 @@
     grid-template-rows: 50% 50%;
     gap: 15px;
 
+    @include md {
+        margin: 0px 100px 0px 100px;
+    }
+
     @include lg{
         grid-template-columns: 25% 25% 25% 25%;
         gap: 15px;
+        margin: 0;
     }
 
     h1,h2{
@@ -39,22 +44,29 @@
 
     .directory-content{
         text-align: center;
-        height: 170px;
+
+            button{
+                margin: 100px 0px 100px 0px;
+            }
 
             .cafe{
                 background-image: url(/deploy/img/Homepage/coffeetable.jpg);
+                background-size: cover;
             }
         
             .our-story{
                 background-image: url(/deploy/img/Homepage/glasses.jpg);
+                background-size: cover;
             }
         
             .resources{
                 background-image: url(/deploy/img/Homepage/yellowflowers.jpg);
+                background-size: cover;
             }
         
             .contact{
                 background-image: url(/deploy/img/Homepage/plantshelf.jpg);
+                background-size: cover;
             }
     }
 

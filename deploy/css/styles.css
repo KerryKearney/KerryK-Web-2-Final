@@ -465,10 +465,16 @@ textarea {
   grid-template-rows: 50% 50%;
   gap: 15px;
 }
+@media (min-width: 768px) {
+  .directory {
+    margin: 0px 100px 0px 100px;
+  }
+}
 @media (min-width: 992px) {
   .directory {
     grid-template-columns: 25% 25% 25% 25%;
     gap: 15px;
+    margin: 0;
   }
 }
 .directory h1, .directory h2 {
@@ -496,19 +502,25 @@ textarea {
 }
 .directory .directory-content {
   text-align: center;
-  height: 170px;
+}
+.directory .directory-content button {
+  margin: 100px 0px 100px 0px;
 }
 .directory .directory-content .cafe {
   background-image: url(/deploy/img/Homepage/coffeetable.jpg);
+  background-size: cover;
 }
 .directory .directory-content .our-story {
   background-image: url(/deploy/img/Homepage/glasses.jpg);
+  background-size: cover;
 }
 .directory .directory-content .resources {
   background-image: url(/deploy/img/Homepage/yellowflowers.jpg);
+  background-size: cover;
 }
 .directory .directory-content .contact {
   background-image: url(/deploy/img/Homepage/plantshelf.jpg);
+  background-size: cover;
 }
 
 /* =============
@@ -516,6 +528,7 @@ textarea {
 ============= */
 .intro {
   text-align: center;
+  margin: 64px;
 }
 .intro h1 {
   font-family: "Playfair Display", serif;
