@@ -608,7 +608,12 @@ form input {
   height: 130px;
 }
 .shop .center {
-  text-align: center;
+  padding: 50px;
+}
+@media (min-width: 768px) {
+  .shop .center {
+    padding: 80px;
+  }
 }
 @media (min-width: 768px) {
   .shop {
