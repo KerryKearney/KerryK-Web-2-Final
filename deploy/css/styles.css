@@ -456,6 +456,10 @@ textarea {
   }
 }
 
+.about-columns {
+  display: grid;
+}
+
 /* =============
     Directory
 ============= */
@@ -597,17 +601,45 @@ textarea {
 ============= */
 form input {
   display: block;
+  font-family: "lato", sans-serif;
+}
+form input .email-input {
+  font-weight: 300;
+  font-size: 16px;
+  margin: 15px 0px 15px 0px;
+}
+form input .submit-button {
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #FFECA8;
+}
+@media (min-width: 992px) {
+  form input {
+    font-size: 24px;
+  }
 }
 
 .sign-up h1 {
   font-family: "lato", sans-serif;
   font-weight: 400;
   font-size: 18px;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .sign-up h1 {
     font-size: 36px;
   }
+}
+
+.clear-box {
+  background-color: #f7f9ee;
+  padding: 15px;
+}
+
+.bg-leaves {
+  background-image: url(/deploy/img/Icons/leaves.jpg);
+  background-size: cover;
+  padding: 50px;
 }
 
 /* =============

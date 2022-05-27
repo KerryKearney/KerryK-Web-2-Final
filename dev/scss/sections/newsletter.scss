@@ -5,6 +5,24 @@
 form{
     input{
         display: block;
+        font-family: 'lato', sans-serif;
+
+            .email-input{
+                font-weight: 300;
+                font-size: 16px;
+                margin: 15px 0px 15px 0px;
+            }
+
+            .submit-button{
+                font-weight: 400;
+                font-size: 18px;
+                background-color: $yellow;
+            }
+
+            @include lg{
+                font-size: 24px;
+            }
+        
     }
 }
 
@@ -13,9 +31,21 @@ form{
             font-family: 'lato', sans-serif;
             font-weight: 400;
             font-size: 18px;
+            margin: 0;
 
             @include md{
                 font-size: 36px;
             }
         }
+}
+
+.clear-box{
+    background-color: rgba($color: $palegreen, $alpha: 1.0);
+    padding: 15px;
+}
+
+.bg-leaves{
+    background-image: url(/deploy/img/Icons/leaves.jpg);
+    background-size: cover;
+    padding: 50px;
 }

@@ -233,6 +233,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/html\/resources.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/html\/resources.html",
+      "oF" : 2
+    },
     "\/dev\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -442,21 +450,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/intro.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/newsletter copy.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/newsletter copy.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
