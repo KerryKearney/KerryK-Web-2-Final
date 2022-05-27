@@ -523,6 +523,16 @@ textarea {
   background-size: cover;
 }
 
+@media (min-width: 992px) {
+  .split {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .split .column {
+    grid-area: content;
+  }
+}
+
 /* =============
     Intro
 ============= */
