@@ -6,12 +6,35 @@
     img{
         width: 75px;
         height: 48px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include md{
+        img{
+            display: none;
+        }
     }
 }
 
 .larger-header{
-    img{
-        width: 136px;
-        height: 58px;
-    }
+    display: none;
+        @include md{
+            display: block;
+            img{
+                width: 136px;
+                height: 58px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+}
+
+.header{
+    background-color: $teal;
+    background-image: url(/deploy/img/Homepage/header.jpg);
+    background-size: cover;
+    padding: 50px 0px 50px 0px;
 }

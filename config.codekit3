@@ -34,6 +34,14 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/html\/resources.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/html\/resources.html",
+      "oF" : 0
+    },
     "\/deploy\/img\/Homepage\/bouquet.jpg" : {
       "ft" : 16384,
       "iS" : 3501241,
@@ -66,6 +74,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/Homepage\/glasses.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Homepage\/header.jpg" : {
+      "ft" : 16384,
+      "iS" : 5242880,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Homepage\/header.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,

@@ -406,11 +406,37 @@ textarea {
 .mobile-header img {
   width: 75px;
   height: 48px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .mobile-header img {
+    display: none;
+  }
 }
 
-.larger-header img {
-  width: 136px;
-  height: 58px;
+.larger-header {
+  display: none;
+}
+@media (min-width: 768px) {
+  .larger-header {
+    display: block;
+  }
+  .larger-header img {
+    width: 136px;
+    height: 58px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.header {
+  background-color: #4E7276;
+  background-image: url(/deploy/img/Homepage/header.jpg);
+  background-size: cover;
+  padding: 50px 0px 50px 0px;
 }
 
 /* =============
@@ -458,6 +484,12 @@ textarea {
 
 .about-columns {
   display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media (min-width: 1200px) {
+  .about-columns {
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
 }
 
 /* =============
@@ -573,6 +605,7 @@ textarea {
   text-justify: inter-word;
   width: 150px;
   font-size: 16px;
+  font-weight: 400;
 }
 @media (min-width: 768px) {
   .intro p.blocktext {
@@ -632,7 +665,7 @@ form input .submit-button {
 }
 
 .clear-box {
-  background-color: #f7f9ee;
+  background-color: rgba(247, 249, 238, 0.8);
   padding: 15px;
 }
 
