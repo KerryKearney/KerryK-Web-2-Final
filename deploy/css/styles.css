@@ -606,33 +606,33 @@ textarea {
 /* =============
     Intro
 ============= */
-.intro {
+.intro-homepage {
   text-align: center;
   margin: 64px;
 }
-.intro h1 {
+.intro-homepage h1 {
   font-family: "Playfair Display", serif;
   font-weight: 600;
   color: #1E4648;
   font-size: 36px;
 }
 @media (min-width: 992px) {
-  .intro h1 {
+  .intro-homepage h1 {
     font-size: 72px;
   }
 }
-.intro h2 {
+.intro-homepage h2 {
   font-family: "lato", sans-serif;
   font-weight: 400;
   color: #1E4648;
   font-size: 18px;
 }
 @media (min-width: 768px) {
-  .intro h2 {
+  .intro-homepage h2 {
     font-size: 24px;
   }
 }
-.intro p.blocktext {
+.intro-homepage p.blocktext {
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
@@ -642,25 +642,95 @@ textarea {
   font-weight: 400;
 }
 @media (min-width: 768px) {
-  .intro p.blocktext {
+  .intro-homepage p.blocktext {
     width: 325px;
   }
 }
 @media (min-width: 992px) {
-  .intro p.blocktext {
+  .intro-homepage p.blocktext {
     width: 400px;
     font-size: 18px;
   }
 }
 @media (min-width: 2560px) {
-  .intro p.blocktext {
+  .intro-homepage p.blocktext {
     width: 450px;
   }
 }
-.intro hr.block {
+.intro-homepage hr.block {
   margin-left: auto;
   margin-right: auto;
   width: 150px;
+}
+
+.intro-resources {
+  text-align: center;
+  margin: 64px;
+}
+.intro-resources h1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .intro-resources h1 {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: #1E4648;
+    font-size: 36px;
+    letter-spacing: 8px;
+  }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  .intro-resources h1 {
+    font-size: 72px;
+  }
+}
+.intro-resources h2 {
+  font-family: "lato", sans-serif;
+  font-weight: 600;
+  color: #1E4648;
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  .intro-resources h2 {
+    font-size: 36px;
+  }
+}
+.intro-resources p.blocktext {
+  text-align: justify;
+  text-justify: inter-word;
+}
+@media (min-width: 768px) {
+  .intro-resources p.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 992px) {
+  .intro-resources p.blocktext {
+    width: 400px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 2560px) {
+  .intro-resources p.blocktext {
+    width: 450px;
+  }
+}
+.intro-resources hr.block {
+  display: none;
+}
+@media (min-width: 768px) {
+  .intro-resources hr.block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+  }
 }
 
 /* =============
@@ -730,3 +800,13 @@ form input .submit-button {
     height: 200px;
   }
 }
+
+/* =============
+    Hero
+============= */
+/* =============
+    Readings
+============= */
+/* =============
+    Book Stores
+============= */
