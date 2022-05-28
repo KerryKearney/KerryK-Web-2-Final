@@ -403,6 +403,14 @@ textarea {
 /* =============
     Header
 ============= */
+.mobile-header {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #F7F9EE;
+  text-align: center;
+  letter-spacing: 8px;
+}
 .mobile-header img {
   width: 75px;
   height: 48px;
@@ -411,6 +419,9 @@ textarea {
   margin-right: auto;
 }
 @media (min-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
   .mobile-header img {
     display: none;
   }
@@ -432,16 +443,39 @@ textarea {
   }
 }
 
-.header {
+.header-homepage {
   background-color: #4E7276;
   background-image: url(/deploy/img/Homepage/header.jpg);
   background-size: cover;
   padding: 50px 0px 50px 0px;
 }
 
+.header-resources {
+  background-color: #4E7276;
+  padding: 50px 0px 50px 0px;
+}
+
 /* =============
     Footer
 ============= */
+.footer {
+  background-color: #4E7276;
+  padding: 15px 20px 15px 20px;
+}
+
+.rights {
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 8px;
+  color: #fff;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .rights {
+    font-size: 16px;
+  }
+}
+
 /* =============
     About
 ============= */
@@ -673,6 +707,7 @@ form input .submit-button {
   background-image: url(/deploy/img/Icons/leaves.jpg);
   background-size: cover;
   padding: 50px;
+  margin: 64px 0px 64px 0px;
 }
 
 /* =============

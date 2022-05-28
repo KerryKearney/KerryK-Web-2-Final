@@ -3,6 +3,13 @@
 ============= */
 
 .mobile-header{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: $palegreen;
+    text-align: center;
+    letter-spacing: 8px;
+
     img{
         width: 75px;
         height: 48px;
@@ -12,6 +19,8 @@
     }
 
     @include md{
+        display: none;
+
         img{
             display: none;
         }
@@ -32,9 +41,14 @@
         }
 }
 
-.header{
+.header-homepage{
     background-color: $teal;
     background-image: url(/deploy/img/Homepage/header.jpg);
     background-size: cover;
+    padding: 50px 0px 50px 0px;
+}
+
+.header-resources{
+    background-color: $teal;
     padding: 50px 0px 50px 0px;
 }
