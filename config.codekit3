@@ -300,15 +300,17 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/Resources\/hstore.webp" : {
-      "ft" : 8388608,
-      "iS" : 67000,
+    "\/deploy\/img\/Resources\/hstore.jpeg" : {
+      "ft" : 16384,
+      "iS" : 190994,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/Resources\/hstore.webp",
+      "oAP" : "\/deploy\/img\/Resources\/hstore.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
-      "ou" : "lpckwebp-default",
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/deploy\/img\/Resources\/team.jpg" : {
@@ -610,7 +612,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/readings.scss" : {
+    "\/dev\/scss\/sections\/reading.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -619,7 +621,22 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/readings.css",
+      "oAP" : "\/dev\/scss\/sections\/reading.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/resources.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/resources.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
