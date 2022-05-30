@@ -60,68 +60,22 @@
 }
 
 .intro-resources{
-    text-align: center;
-    margin: 64px;
-
-    h1{
-        display: none;
-
-            @include md{
-            display: block;
-            font-family: 'Playfair Display', serif;
-            font-weight: 600;
-            color: $green;
-            font-size: 36px;
-            letter-spacing: 8px;
-
-                @include lg{
-                    font-size: 72px;
-                }
-            }
-    }
-
-    h2{
-        font-family: 'lato', sans-serif;
-        font-weight: 600;
-        color: $green;
-        font-size: 24px;
-
-        @include md{
-            font-size: 36px;
-        }
+    display: block;
+    
+    img{
+        width: 100%;
+        height: auto;
     }
     
-    p.blocktext{
-        text-align: justify;
-        text-justify: inter-word;
-
-            @include md{
-                margin-left: auto;
-                margin-right: auto;
-                text-align: justify;
-                text-justify: inter-word;
-                font-size: 16px;
-                font-weight: 400;
-            }
-
-            @include lg{
-                width: 400px;
-                font-size: 18px;
-            }
-
-            @include xxl{
-                width: 450px;
-            }
-    }
-
-    hr.block{
-        display: none;
-
-        @include md{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 150px;
+    @include md{
+        display: grid;
+        gap: 18px;
+        grid-template-columns: 50% 50%;
+        margin: 0px 120px 0px 120px;
+    
+        .column{
+            text-align: center;
+            margin: auto;
         }
     }
 }

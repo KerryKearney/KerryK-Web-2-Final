@@ -365,6 +365,11 @@ template {
   text-align: center;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 /* =============
     Typography
 ============= */
@@ -461,6 +466,10 @@ textarea {
 .footer {
   background-color: #4E7276;
   padding: 15px 20px 15px 20px;
+}
+.footer img {
+  width: 20px;
+  vertical-align: middle;
 }
 
 .rights {
@@ -664,72 +673,22 @@ textarea {
 }
 
 .intro-resources {
-  text-align: center;
-  margin: 64px;
+  display: block;
 }
-.intro-resources h1 {
-  display: none;
-}
-@media (min-width: 768px) {
-  .intro-resources h1 {
-    display: block;
-    font-family: "Playfair Display", serif;
-    font-weight: 600;
-    color: #1E4648;
-    font-size: 36px;
-    letter-spacing: 8px;
-  }
-}
-@media (min-width: 768px) and (min-width: 992px) {
-  .intro-resources h1 {
-    font-size: 72px;
-  }
-}
-.intro-resources h2 {
-  font-family: "lato", sans-serif;
-  font-weight: 600;
-  color: #1E4648;
-  font-size: 24px;
+.intro-resources img {
+  width: 100%;
+  height: auto;
 }
 @media (min-width: 768px) {
-  .intro-resources h2 {
-    font-size: 36px;
+  .intro-resources {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 50% 50%;
+    margin: 0px 120px 0px 120px;
   }
-}
-.intro-resources p.blocktext {
-  text-align: justify;
-  text-justify: inter-word;
-}
-@media (min-width: 768px) {
-  .intro-resources p.blocktext {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 16px;
-    font-weight: 400;
-  }
-}
-@media (min-width: 992px) {
-  .intro-resources p.blocktext {
-    width: 400px;
-    font-size: 18px;
-  }
-}
-@media (min-width: 2560px) {
-  .intro-resources p.blocktext {
-    width: 450px;
-  }
-}
-.intro-resources hr.block {
-  display: none;
-}
-@media (min-width: 768px) {
-  .intro-resources hr.block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
+  .intro-resources .column {
+    text-align: center;
+    margin: auto;
   }
 }
 
@@ -804,12 +763,65 @@ form input .submit-button {
 /* =============
     Hero
 ============= */
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
 /* =============
     Reading
 ============= */
 /* =============
     Book Stores
 ============= */
+.bookstores {
+  display: block;
+}
+@media (min-width: 768px) {
+  .bookstores {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .bookstores .column {
+    text-align: center;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  .bookstores .column .sub-column {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
 /* =============
     Resources
 ============= */
+h1, h2 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.start {
+  display: block;
+}
+.start img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .start {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 50% 50%;
+    margin: 0px 120px 0px 120px;
+  }
+  .start .column {
+    text-align: center;
+    margin: auto;
+  }
+}

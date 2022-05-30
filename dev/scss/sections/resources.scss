@@ -2,3 +2,32 @@
     Resources
 ============= */
  
+h1,h2{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.start{
+    display: block;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    @include md{
+        display: grid;
+        gap: 18px;
+        grid-template-columns: 50% 50%;
+        margin: 0px 120px 0px 120px;
+
+        .column{
+            text-align: center;
+            margin: auto;
+        }
+    }
+}

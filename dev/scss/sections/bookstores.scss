@@ -1,3 +1,24 @@
 /* =============
     Book Stores
 ============= */
+
+.bookstores{
+    display: block;
+
+    @include md{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    
+        .column{
+            text-align: center;
+            margin: auto;
+
+            @include lg{
+                .sub-column{
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                }
+            }
+        }
+    }
+}
