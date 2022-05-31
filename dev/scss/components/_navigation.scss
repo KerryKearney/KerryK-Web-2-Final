@@ -5,7 +5,7 @@
 nav {
 	// this makes the nav not show up on the mobile sizes
     display: none;
-	background-color: $teal;
+	background-color: none;
 	height: 100vh;
 	padding: 16px;
 	position: absolute;
@@ -13,7 +13,7 @@ nav {
 	top: 0;
 	width: 50vw;
 	@include lg {
-		background-color: $white;
+		background-color: none;
 		display: block;
 		height: 100%;
 		padding: 0;
@@ -26,7 +26,7 @@ nav {
 		button {
 			background-color: transparent;
 			border: none;
-			color: $white;
+			color: none;
 			
 			&:hover{ 
 				cursor: pointer; 
@@ -48,24 +48,24 @@ nav {
 			margin-bottom: 24px;
 			text-align: right;
 			@include lg {
-				border-left: 1px solid $green;
 				margin-bottom: 0;
 				margin-left: 16px;
 				padding-left: 24px;
 			}
 			a:link,
             a:visited {
+                font-family: 'lato', sans-serif;
 				color: $white;
 				font-size: 20px;
-				font-weight: 300;
+				font-weight: 400;
 				text-decoration: none;
 				transition: 0.25s;
 				@include lg {
-					color: $teal;
+					color: $white;
 				}
 				&:hover,
                 &:active {
-					color: $green;
+					color: $yellow;
 				}
 			}
 			&:first-child {

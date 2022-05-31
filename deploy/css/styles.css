@@ -407,7 +407,7 @@ textarea {
 ============= */
 nav {
   display: none;
-  background-color: #4E7276;
+  background-color: none;
   height: 100vh;
   padding: 16px;
   position: absolute;
@@ -417,7 +417,7 @@ nav {
 }
 @media (min-width: 992px) {
   nav {
-    background-color: #fff;
+    background-color: none;
     display: block;
     height: 100%;
     padding: 0;
@@ -432,7 +432,7 @@ nav aside {
 nav aside button {
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: none;
 }
 nav aside button:hover {
   cursor: pointer;
@@ -457,7 +457,6 @@ nav ul li {
 }
 @media (min-width: 992px) {
   nav ul li {
-    border-left: 1px solid #1E4648;
     margin-bottom: 0;
     margin-left: 16px;
     padding-left: 24px;
@@ -465,22 +464,23 @@ nav ul li {
 }
 nav ul li a:link,
 nav ul li a:visited {
+  font-family: "lato", sans-serif;
   color: #fff;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
   transition: 0.25s;
 }
 @media (min-width: 992px) {
   nav ul li a:link,
 nav ul li a:visited {
-    color: #4E7276;
+    color: #fff;
   }
 }
 nav ul li a:link:hover, nav ul li a:link:active,
 nav ul li a:visited:hover,
 nav ul li a:visited:active {
-  color: #1E4648;
+  color: #FFECA8;
 }
 nav ul li:first-child {
   border: none;
@@ -788,6 +788,7 @@ nav ul li:first-child {
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 36px;
+  color: #1E4648;
 }
 @media (min-width: 992px) {
   .intro-resources h1 {
@@ -948,22 +949,22 @@ form input .submit-button {
 }
 
 @media (min-width: 768px) {
-  .resources {
+  .resources-text {
     margin: 0 25% 0 25%;
   }
 }
-.resources h1 {
+.resources-text h1 {
   text-align: center;
   font-family: "lato", sans-serif;
   font-weight: 600;
   font-size: 24px;
 }
 @media (min-width: 992px) {
-  .resources h1 {
+  .resources-text h1 {
     font-size: 36px;
   }
 }
-.resources h2 {
+.resources-text h2 {
   text-align: center;
   text-align: center;
   font-family: "lato", sans-serif;
@@ -971,11 +972,11 @@ form input .submit-button {
   font-size: 18px;
 }
 @media (min-width: 992px) {
-  .resources h2 {
+  .resources-text h2 {
     font-size: 24px;
   }
 }
-.resources p {
+.resources-text p {
   text-align: justify;
   text-justify: inter-word;
   font-family: "lato", sans-serif;
@@ -983,7 +984,7 @@ form input .submit-button {
   font-size: 16px;
 }
 @media (min-width: 992px) {
-  .resources p {
+  .resources-text p {
     font-weight: 400;
     font-size: 18px;
   }
