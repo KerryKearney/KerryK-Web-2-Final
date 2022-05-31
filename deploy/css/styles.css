@@ -525,13 +525,39 @@ textarea {
   }
 }
 
+.dissapear img {
+  display: block;
+}
+@media (min-width: 768px) {
+  .dissapear img {
+    display: none;
+  }
+}
+
 .about-columns {
   display: grid;
+}
+.about-columns .columns {
   grid-template-columns: 50% 50%;
 }
+@media (min-width: 768px) {
+  .about-columns .columns {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+}
 @media (min-width: 1200px) {
-  .about-columns {
+  .about-columns .columns {
     grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+}
+.about-columns .columns .one-column {
+  display: grid;
+  grid-template-columns: 100%;
+}
+@media (min-width: 1200px) {
+  .about-columns .columns .one-column {
+    display: none;
   }
 }
 

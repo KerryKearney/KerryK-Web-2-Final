@@ -41,12 +41,39 @@
     }
 }
 
+.dissapear{
+    img{
+        display: block;
+    }
+    @include md{
+        img{
+            display: none;
+        }
+    }
+}
+
 .about-columns{
     display: grid;
-    grid-template-columns: 50% 50%;
 
-    @include xl{
-        grid-template-columns: 33.33% 33.33% 33.33%;
+    .columns{
+        grid-template-columns: 50% 50%;
+
+        @include md{
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+        }
+    
+        @include xl{
+            grid-template-columns: 33.33% 33.33% 33.33%;
+        }
+
+        .one-column{
+            display: grid;
+            grid-template-columns: 100%;
+
+            @include xl{
+                display: none;
+            }
+        }
     }
-
 }
