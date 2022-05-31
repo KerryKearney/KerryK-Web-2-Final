@@ -405,6 +405,87 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav {
+  display: none;
+  background-color: #4E7276;
+  height: 100vh;
+  padding: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50vw;
+}
+@media (min-width: 992px) {
+  nav {
+    background-color: #fff;
+    display: block;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+nav aside {
+  display: flex;
+  justify-content: flex-end;
+}
+nav aside button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+nav aside button:hover {
+  cursor: pointer;
+}
+nav ul {
+  height: 100%;
+  padding-top: 20%;
+}
+@media (min-width: 992px) {
+  nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0;
+  }
+}
+nav ul li {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+  text-align: right;
+}
+@media (min-width: 992px) {
+  nav ul li {
+    border-left: 1px solid #1E4648;
+    margin-bottom: 0;
+    margin-left: 16px;
+    padding-left: 24px;
+  }
+}
+nav ul li a:link,
+nav ul li a:visited {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: 0.25s;
+}
+@media (min-width: 992px) {
+  nav ul li a:link,
+nav ul li a:visited {
+    color: #4E7276;
+  }
+}
+nav ul li a:link:hover, nav ul li a:link:active,
+nav ul li a:visited:hover,
+nav ul li a:visited:active {
+  color: #1E4648;
+}
+nav ul li:first-child {
+  border: none;
+}
+
 /* =============
     Header
 ============= */
@@ -415,6 +496,7 @@ textarea {
   color: #F7F9EE;
   text-align: center;
   letter-spacing: 8px;
+  margin: 10%;
 }
 .mobile-header img {
   width: 75px;
@@ -432,14 +514,14 @@ textarea {
   }
 }
 
-.larger-header {
+.switch-wordmark {
   display: none;
 }
 @media (min-width: 768px) {
-  .larger-header {
+  .switch-wordmark {
     display: block;
   }
-  .larger-header img {
+  .switch-wordmark img {
     width: 136px;
     height: 58px;
     display: block;
@@ -700,6 +782,17 @@ textarea {
 
 .intro-resources {
   display: block;
+  margin-top: 15%;
+}
+.intro-resources h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 36px;
+}
+@media (min-width: 992px) {
+  .intro-resources h1 {
+    font-size: 72px;
+  }
 }
 .intro-resources img {
   width: 100%;
@@ -710,8 +803,15 @@ textarea {
     display: grid;
     gap: 18px;
     grid-template-columns: 50% 50%;
-    margin: 0px 120px 0px 120px;
+    margin: 0 15% 0 15%;
   }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  .intro-resources {
+    margin: 0 25% 0 25%;
+  }
+}
+@media (min-width: 768px) {
   .intro-resources .column {
     text-align: center;
     margin: auto;
@@ -792,6 +892,12 @@ form input .submit-button {
 .hero img {
   width: 100%;
   height: auto;
+  margin: 64px 0px 64px 0px;
+}
+@media (min-width: 992px) {
+  .hero img {
+    margin: 96px 0px 96px 0px;
+  }
 }
 
 /* =============
@@ -823,13 +929,64 @@ form input .submit-button {
 /* =============
     Resources
 ============= */
-h1, h2 {
-  text-align: center;
+.title {
+  display: none;
+}
+@media (min-width: 768px) {
+  .title {
+    display: block;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) {
+  .title {
+    font-size: 36px;
+  }
 }
 
-p {
+@media (min-width: 768px) {
+  .resources {
+    margin: 0 25% 0 25%;
+  }
+}
+.resources h1 {
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+@media (min-width: 992px) {
+  .resources h1 {
+    font-size: 36px;
+  }
+}
+.resources h2 {
+  text-align: center;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+@media (min-width: 992px) {
+  .resources h2 {
+    font-size: 24px;
+  }
+}
+.resources p {
   text-align: justify;
   text-justify: inter-word;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+@media (min-width: 992px) {
+  .resources p {
+    font-weight: 400;
+    font-size: 18px;
+  }
 }
 
 .start {

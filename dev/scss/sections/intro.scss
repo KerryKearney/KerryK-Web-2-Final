@@ -61,6 +61,16 @@
 
 .intro-resources{
     display: block;
+    margin-top: 15%;
+    h1{
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 36px;
+
+        @include lg{
+            font-size: 72px;
+        }
+    }
     
     img{
         width: 100%;
@@ -71,7 +81,11 @@
         display: grid;
         gap: 18px;
         grid-template-columns: 50% 50%;
-        margin: 0px 120px 0px 120px;
+        margin: 0 15% 0 15%;
+
+        @include lg{
+            margin: 0 25% 0 25%;
+        }
     
         .column{
             text-align: center;

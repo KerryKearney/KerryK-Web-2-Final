@@ -9,6 +9,7 @@
     color: $palegreen;
     text-align: center;
     letter-spacing: 8px;
+    margin: 10%;
 
     img{
         width: 75px;
@@ -27,10 +28,12 @@
     }
 }
 
-.larger-header{
+.switch-wordmark{
     display: none;
+    
         @include md{
             display: block;
+
             img{
                 width: 136px;
                 height: 58px;
