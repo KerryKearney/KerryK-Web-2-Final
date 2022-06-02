@@ -52,28 +52,63 @@
     }
 }
 
-.about-columns{
+.about-grid{
     display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "text-1 text-1"
+    "image-1 image-2"
+    "text-2 text-2"
+    "image-3 image-3"
+    "button-1 button-1"
+    ;
 
-    .columns{
-        grid-template-columns: 50% 50%;
+    @include md{
+        grid-template-areas:
+        "text-1 text-1"
+        "image-1 image-2"
+        "text-2 text-2"
+        "button-1 button-1"
+        ;
+    }
 
-        @include md{
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 50% 50%;
-        }
-    
-        @include xl{
-            grid-template-columns: 33.33% 33.33% 33.33%;
-        }
+    @include lg{
+        grid-template-areas: 
+        "image-1 text-1"
+        "text-2 image-2"
+        ;
+    }
 
-        .one-column{
-            display: grid;
-            grid-template-columns: 100%;
+    @include xl{
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-areas:
+        "text-1 text-1 text-1"
+        "image-1 image-2 image-3"
+        "text-2 text-2 text-2"
+        ;
+    }
 
-            @include xl{
-                display: none;
-            }
-        }
+    .text-1{
+        grid-area: text-1;
+    }
+
+    .text-2{
+        grid-area: text-2;
+    }
+
+    .image-1{
+        grid-area: image-1;
+    }
+
+    .image-2{
+        grid-area: image-2;
+    }
+
+    .image-3{
+        grid-area: image-3;
+    }
+
+    .button-1{
+        grid-area: button-1;
     }
 }
