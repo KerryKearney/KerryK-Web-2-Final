@@ -55,3 +55,24 @@
     background-color: $teal;
     padding: 50px 0px 50px 0px;
 }
+
+.burger-container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    @include md{
+        display: none;
+    }
+
+    button{
+        border: none;
+        background-color: transparent;
+        color: $white;
+        font-size: 20px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

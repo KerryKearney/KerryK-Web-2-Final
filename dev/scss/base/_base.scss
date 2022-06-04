@@ -16,3 +16,14 @@ img{
     width: 100%;
     height: auto;
 }
+
+.show-menu{
+    display: block !important;
+}
+
+
+.hide-for-lg{
+    @include lg{
+        display: none;
+    }
+}

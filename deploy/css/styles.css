@@ -366,6 +366,16 @@ img {
   height: auto;
 }
 
+.show-menu {
+  display: block !important;
+}
+
+@media (min-width: 992px) {
+  .hide-for-lg {
+    display: none;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -538,6 +548,26 @@ nav ul li:first-child {
   padding: 50px 0px 50px 0px;
 }
 
+.burger-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .burger-container {
+    display: none;
+  }
+}
+.burger-container button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+}
+.burger-container button:hover {
+  cursor: pointer;
+}
+
 /* =============
     Footer
 ============= */
@@ -673,29 +703,6 @@ nav ul li:first-child {
     margin: 0;
   }
 }
-.directory h1, .directory h2 {
-  text-align: center;
-  color: #1E4648;
-  font-family: "lato", sans-serif;
-}
-.directory h1 {
-  font-weight: 700;
-  font-size: 24px;
-}
-@media (min-width: 992px) {
-  .directory h1 {
-    font-size: 36px;
-  }
-}
-.directory h2 {
-  font-weight: 300;
-  font-size: 16px;
-}
-@media (min-width: 992px) {
-  .directory h2 {
-    font-size: 24px;
-  }
-}
 .directory .directory-content {
   text-align: center;
 }
@@ -721,11 +728,50 @@ nav ul li:first-child {
 
 .split {
   text-align: center;
+  color: #1E4648;
+  font-family: "lato", sans-serif;
+}
+.split h1 {
+  font-weight: 600;
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  .split h1 {
+    font-size: 36px;
+  }
+}
+.split h2 {
+  font-weight: 300;
+  font-size: 16px;
 }
 @media (min-width: 992px) {
   .split {
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+}
+
+.center h1, .center h2 {
+  text-align: center;
+  color: #1E4648;
+  font-family: "lato", sans-serif;
+}
+.center h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+@media (min-width: 992px) {
+  .center h1 {
+    font-size: 36px;
+  }
+}
+.center h2 {
+  font-weight: 300;
+  font-size: 16px;
+}
+@media (min-width: 992px) {
+  .center h2 {
+    font-size: 24px;
   }
 }
 
@@ -881,6 +927,7 @@ form input .submit-button {
 .shop {
   background-color: #4E7276;
   height: 130px;
+  text-align: center;
 }
 .shop .center {
   padding: 50px;
