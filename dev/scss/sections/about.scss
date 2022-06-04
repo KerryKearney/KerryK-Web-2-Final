@@ -80,7 +80,7 @@
     }
 
     @include xl{
-        grid-template-columns: 1fr 1fr 1fr
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
         "text-1 text-1 text-1"
         "image-1 image-2 image-3"

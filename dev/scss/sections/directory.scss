@@ -73,13 +73,10 @@
 }
 
 .split{
+    text-align: center;
 
     @include lg{
         display: grid;
         grid-template-columns: 50% 50%;
-        
-        .column{
-            grid-area: content;
-        }
     }
 }

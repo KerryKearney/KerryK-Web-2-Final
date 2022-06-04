@@ -361,10 +361,6 @@ template {
   grid-area: content;
 }
 
-.center {
-  text-align: center;
-}
-
 img {
   width: 100%;
   height: auto;
@@ -445,7 +441,7 @@ nav ul {
   nav ul {
     align-items: center;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     padding-top: 0;
   }
 }
@@ -619,7 +615,7 @@ nav ul li:first-child {
 .about-grid {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-areas: none "text-1 text-1" "image-1 image-2" "text-2 text-2" "image-3 image-3" "button-1 button-1";
+  grid-template-areas: "text-1 text-1" "image-1 image-2" "text-2 text-2" "image-3 image-3" "button-1 button-1";
 }
 @media (min-width: 768px) {
   .about-grid {
@@ -633,7 +629,8 @@ nav ul li:first-child {
 }
 @media (min-width: 1200px) {
   .about-grid {
-    grid-template-columns: 1fr 1fr 1fr grid-template-areas "text-1 text-1 text-1" "image-1 image-2 image-3" "text-2 text-2 text-2";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "text-1 text-1 text-1" "image-1 image-2 image-3" "text-2 text-2 text-2";
   }
 }
 .about-grid .text-1 {
@@ -653,9 +650,6 @@ nav ul li:first-child {
 }
 .about-grid .button-1 {
   grid-area: button-1;
-}
-.about-grid .button-2 {
-  grid-area: button-2;
 }
 
 /* =============
@@ -725,13 +719,13 @@ nav ul li:first-child {
   background-size: cover;
 }
 
+.split {
+  text-align: center;
+}
 @media (min-width: 992px) {
   .split {
     display: grid;
     grid-template-columns: 50% 50%;
-  }
-  .split .column {
-    grid-area: content;
   }
 }
 
