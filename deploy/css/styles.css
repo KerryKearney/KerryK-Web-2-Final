@@ -839,15 +839,40 @@ nav ul li:first-child {
   display: block;
   margin-top: 15%;
 }
-.intro-resources h1 {
-  font-family: "Playfair Display", serif;
+.intro-resources .column h1 {
+  font-family: "lato", sans-serif;
   font-weight: 600;
-  font-size: 36px;
-  color: #1E4648;
+  font-size: 24px;
 }
 @media (min-width: 992px) {
-  .intro-resources h1 {
-    font-size: 72px;
+  .intro-resources .column h1 {
+    font-size: 36px;
+  }
+}
+.intro-resources .column p.blocktext {
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+@media (min-width: 992px) {
+  .intro-resources .column p.blocktext {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+.intro-resources .column hr {
+  display: none;
+}
+@media (min-width: 768px) {
+  .intro-resources .column hr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
   }
 }
 .intro-resources img {
@@ -960,6 +985,21 @@ form input .submit-button {
 /* =============
     Reading
 ============= */
+.readinglist {
+  text-align: center;
+}
+.readinglist h1 {
+  letter-spacing: 0.2em;
+}
+.readinglist form {
+  display: inline-block;
+}
+.readinglist form input {
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
 /* =============
     Book Stores
 ============= */

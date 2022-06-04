@@ -2,3 +2,20 @@
     Reading
 ============= */
  
+.readinglist{
+    text-align: center;
+
+    h1{
+        letter-spacing: 0.2em;
+    }
+
+    form{
+        display: inline-block;
+
+        input{
+            font-family: 'lato', sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+        }
+    }
+}
