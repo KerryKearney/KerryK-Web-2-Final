@@ -41,17 +41,6 @@
     }
 }
 
-.dissapear{
-    img{
-        display: block;
-    }
-    @include md{
-        img{
-            display: none;
-        }
-    }
-}
-
 .about-grid{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -106,6 +95,14 @@
 
     .image-3{
         grid-area: image-3;
+        
+        @include md{
+            display: none;
+        }
+
+        @include xl{
+            display: contents;
+        }
     }
 
     .button-1{

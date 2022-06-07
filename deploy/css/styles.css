@@ -633,15 +633,6 @@ nav ul li:first-child {
   }
 }
 
-.dissapear img {
-  display: block;
-}
-@media (min-width: 768px) {
-  .dissapear img {
-    display: none;
-  }
-}
-
 .about-grid {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -677,6 +668,16 @@ nav ul li:first-child {
 }
 .about-grid .image-3 {
   grid-area: image-3;
+}
+@media (min-width: 768px) {
+  .about-grid .image-3 {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .about-grid .image-3 {
+    display: contents;
+  }
 }
 .about-grid .button-1 {
   grid-area: button-1;
@@ -943,7 +944,7 @@ form input .submit-button {
   background-image: url(/deploy/img/Icons/leaves.jpg);
   background-size: cover;
   padding: 50px;
-  margin: 64px 0px 64px 0px;
+  margin: 64px 25px 64px 25px;
 }
 
 /* =============
