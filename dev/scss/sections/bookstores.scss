@@ -8,17 +8,38 @@
     @include md{
         display: grid;
         grid-template-columns: 50% 50%;
+        gap: 15px;
     
         .column{
             text-align: center;
-            margin: auto;
-
+            
             @include lg{
                 .sub-column{
                     display: grid;
                     grid-template-columns: 50% 50%;
+                    gap: 15px;
                 }
             }
         }
+    }
+}
+
+.extra-img{
+    display: none;
+
+    @include lg{
+        display: block;
+    }
+}
+
+.margin-store{
+    margin: 64px 0px 64px 0px;
+
+    @include md{
+        margin: 64px 120px 64px 120px;
+    }
+
+    @include lg{
+        margin: 96px 0px 96px 0px;
     }
 }

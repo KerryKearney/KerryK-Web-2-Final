@@ -385,6 +385,10 @@ img {
   }
 }
 
+h1, h2, h3, p {
+  color: #1E4648;
+}
+
 /* =============
     Typography
 ============= */
@@ -986,7 +990,7 @@ nav ul li:first-child {
     display: grid;
     gap: 18px;
     grid-template-columns: 50% 50%;
-    margin: 0 15% 0 15%;
+    margin: 0px 120px 0px 120px;
   }
 }
 @media (min-width: 768px) and (min-width: 992px) {
@@ -1121,16 +1125,40 @@ form input .submit-button {
   .bookstores {
     display: grid;
     grid-template-columns: 50% 50%;
+    gap: 15px;
   }
   .bookstores .column {
     text-align: center;
-    margin: auto;
   }
 }
 @media (min-width: 768px) and (min-width: 992px) {
   .bookstores .column .sub-column {
     display: grid;
     grid-template-columns: 50% 50%;
+    gap: 15px;
+  }
+}
+
+.extra-img {
+  display: none;
+}
+@media (min-width: 992px) {
+  .extra-img {
+    display: block;
+  }
+}
+
+.margin-store {
+  margin: 64px 0px 64px 0px;
+}
+@media (min-width: 768px) {
+  .margin-store {
+    margin: 64px 120px 64px 120px;
+  }
+}
+@media (min-width: 992px) {
+  .margin-store {
+    margin: 96px 0px 96px 0px;
   }
 }
 
@@ -1155,11 +1183,6 @@ form input .submit-button {
   }
 }
 
-@media (min-width: 768px) {
-  .resources-text {
-    margin: 0 25% 0 25%;
-  }
-}
 .resources-text h1 {
   text-align: center;
   font-family: "lato", sans-serif;
@@ -1194,6 +1217,14 @@ form input .submit-button {
   .resources-text p {
     font-weight: 400;
     font-size: 18px;
+  }
+}
+.resources-text .margin {
+  margin: 0px;
+}
+@media (min-width: 768px) {
+  .resources-text .margin {
+    margin: 0px 220px 0px 220px;
   }
 }
 

@@ -19,9 +19,6 @@
 }
 
  .resources-text{
-    @include md{
-        margin: 0 25% 0 25%;
-    }
 
     h1{
         text-align: center;
@@ -57,6 +54,15 @@
             font-weight: 400;
             font-size: 18px;
         }
+    }
+
+    .margin{
+        margin: 0px;
+
+        @include md{
+            margin: 0px 220px 0px 220px;
+        }
+
     }
 }
 
