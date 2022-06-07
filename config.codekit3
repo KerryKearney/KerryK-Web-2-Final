@@ -133,6 +133,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/Homepage\/twoflowers-square.jpg" : {
+      "ft" : 16384,
+      "iS" : 167683,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Homepage\/twoflowers-square.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/Homepage\/twoflowers.jpg" : {
       "ft" : 16384,
       "iS" : 1881290,

@@ -11,12 +11,15 @@ form{
                 font-weight: 300;
                 font-size: 16px;
                 margin: 15px 0px 15px 0px;
+                width: 100%;
             }
 
             .submit-button{
                 font-weight: 400;
                 font-size: 18px;
                 background-color: $yellow;
+                width: 1fr;
+                align-items: right;
             }
 
             @include lg{
@@ -48,5 +51,10 @@ form{
     background-image: url(/deploy/img/Icons/leaves.jpg);
     background-size: cover;
     padding: 50px;
-    margin: 64px 25px 64px 25px;
+    margin: 64px 0px 64px 0px;
+
+    @include md{
+        width: 420px;
+        margin: 64px auto 64px auto;
+    }
 }

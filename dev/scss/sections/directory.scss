@@ -21,29 +21,33 @@
     .directory-content{
         text-align: center;
 
-            button{
-                margin: 100px 0px 100px 0px;
-            }
+        button{
+            margin: 100px 0px 100px 0px;
 
-            .cafe{
-                background-image: url(/deploy/img/Homepage/coffeetable.jpg);
-                background-size: cover;
+            @include xxl{
+                margin: 200px 0px 200px 0px;;
             }
-        
-            .our-story{
-                background-image: url(/deploy/img/Homepage/glasses.jpg);
-                background-size: cover;
-            }
-        
-            .resources{
-                background-image: url(/deploy/img/Homepage/yellowflowers.jpg);
-                background-size: cover;
-            }
-        
-            .contact{
-                background-image: url(/deploy/img/Homepage/plantshelf.jpg);
-                background-size: cover;
-            }
+        }
+
+        .cafe{
+            background-image: url(/deploy/img/Homepage/coffeetable.jpg);
+            background-size: cover;
+        }
+    
+        .our-story{
+            background-image: url(/deploy/img/Homepage/glasses.jpg);
+            background-size: cover;
+        }
+    
+        .resources{
+            background-image: url(/deploy/img/Homepage/yellowflowers.jpg);
+            background-size: cover;
+        }
+    
+        .contact{
+            background-image: url(/deploy/img/Homepage/plantshelf.jpg);
+            background-size: cover;
+        }
     }
 
 }

@@ -376,6 +376,15 @@ img {
   }
 }
 
+.section-spacer {
+  margin: 64px 0px 64px 0px;
+}
+@media (min-width: 992px) {
+  .section-spacer {
+    margin: 96px 0px 96px 0px;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -600,8 +609,14 @@ nav ul li:first-child {
   font-family: "lato", sans-serif;
   color: #1E4648;
 }
+@media (min-width: 1200px) {
+  .offered {
+    width: 690px;
+    margin: auto;
+  }
+}
 .offered h1 {
-  text-align: justify;
+  text-align: center;
   font-weight: 400;
   font-size: 18px;
 }
@@ -621,14 +636,33 @@ nav ul li:first-child {
   }
 }
 
+@media (min-width: 1200px) {
+  .heart {
+    width: 690px;
+    margin: auto;
+  }
+}
 .heart h2 {
   font-family: "lato", sans-serif;
   color: #1E4648;
   font-weight: 300;
   font-size: 16px;
+  text-align: justify;
 }
 @media (min-width: 768px) {
   .heart h2 {
+    font-size: 18px;
+  }
+}
+.heart h3 {
+  font-family: "lato", sans-serif;
+  color: #1E4648;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .heart h3 {
     font-size: 18px;
   }
 }
@@ -641,46 +675,108 @@ nav ul li:first-child {
 @media (min-width: 768px) {
   .about-grid {
     grid-template-areas: "text-1 text-1" "image-1 image-2" "text-2 text-2" "button-1 button-1";
+    margin: 0px 120px 0px 120px;
   }
 }
 @media (min-width: 992px) {
   .about-grid {
     grid-template-areas: "image-1 text-1" "text-2 image-2";
+    margin: 0px 220px 0px 220px;
   }
 }
 @media (min-width: 1200px) {
   .about-grid {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "text-1 text-1 text-1" "image-1 image-2 image-3" "text-2 text-2 text-2";
+    grid-template-areas: "text-1 text-1 text-1" "image-1 image-2 image-4" "text-2 text-2 text-2";
+    margin: 0px;
   }
 }
 .about-grid .text-1 {
   grid-area: text-1;
+  margin-bottom: 64px;
 }
-.about-grid .text-2 {
-  grid-area: text-2;
-}
-.about-grid .image-1 {
-  grid-area: image-1;
-}
-.about-grid .image-2 {
-  grid-area: image-2;
-}
-.about-grid .image-3 {
-  grid-area: image-3;
-}
-@media (min-width: 768px) {
-  .about-grid .image-3 {
-    display: none;
+@media (min-width: 992px) {
+  .about-grid .text-1 {
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 1200px) {
-  .about-grid .image-3 {
-    display: contents;
+  .about-grid .text-1 {
+    margin-bottom: 96px;
   }
 }
-.about-grid .button-1 {
+.about-grid .text-2 {
+  grid-area: text-2;
+  margin-top: 64px;
+}
+@media (min-width: 992px) {
+  .about-grid .text-2 {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-grid .text-2 {
+    margin-top: 96px;
+  }
+}
+.about-grid .text-2 .button-2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .about-grid .text-2 .button-2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.image-1 {
+  grid-area: image-1;
+}
+
+.image-2 {
+  grid-area: image-2;
+}
+
+.image-3 {
+  grid-area: image-3;
+}
+@media (min-width: 768px) {
+  .image-3 {
+    display: none;
+  }
+}
+
+.image-4 {
+  grid-area: image-4;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .image-4 {
+    display: block;
+  }
+}
+
+.button-1 {
   grid-area: button-1;
+}
+@media (min-width: 768px) {
+  .button-1 {
+    display: none;
+  }
+}
+
+.carousel {
+  margin: auto;
+}
+@media (min-width: 992px) {
+  .carousel {
+    margin: 0px 120px 0px 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel {
+    margin: 0px 135px 0px 135px;
+  }
 }
 
 /* =============
@@ -709,6 +805,11 @@ nav ul li:first-child {
 }
 .directory .directory-content button {
   margin: 100px 0px 100px 0px;
+}
+@media (min-width: 2560px) {
+  .directory .directory-content button {
+    margin: 200px 0px 200px 0px;
+  }
 }
 .directory .directory-content .cafe {
   background-image: url(/deploy/img/Homepage/coffeetable.jpg);
@@ -911,11 +1012,14 @@ form input .email-input {
   font-weight: 300;
   font-size: 16px;
   margin: 15px 0px 15px 0px;
+  width: 100%;
 }
 form input .submit-button {
   font-weight: 400;
   font-size: 18px;
   background-color: #FFECA8;
+  width: 1fr;
+  align-items: right;
 }
 @media (min-width: 992px) {
   form input {
@@ -944,7 +1048,13 @@ form input .submit-button {
   background-image: url(/deploy/img/Icons/leaves.jpg);
   background-size: cover;
   padding: 50px;
-  margin: 64px 25px 64px 25px;
+  margin: 64px 0px 64px 0px;
+}
+@media (min-width: 768px) {
+  .bg-leaves {
+    width: 420px;
+    margin: 64px auto 64px auto;
+  }
 }
 
 /* =============

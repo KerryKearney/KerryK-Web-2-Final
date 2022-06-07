@@ -27,3 +27,11 @@ img{
         display: none;
     }
 }
+
+.section-spacer{
+    margin: 64px 0px 64px 0px;
+
+    @include lg{
+        margin: 96px 0px 96px 0px
+    }
+}
