@@ -389,6 +389,10 @@ h1, h2, h3, p {
   color: #1E4648;
 }
 
+.bg {
+  background-color: #F7F9EE;
+}
+
 /* =============
     Typography
 ============= */
@@ -1089,11 +1093,11 @@ form input .submit-button {
 .hero img {
   width: 100%;
   height: auto;
-  margin: 64px 0px 64px 0px;
+  margin: 64px 0px 0px 0px;
 }
 @media (min-width: 992px) {
   .hero img {
-    margin: 96px 0px 96px 0px;
+    margin: 96px 0px 0px 0px;
   }
 }
 
@@ -1102,6 +1106,8 @@ form input .submit-button {
 ============= */
 .readinglist {
   text-align: center;
+  background-color: #F7F9EE;
+  padding: 25px 0px 25px 0px;
 }
 .readinglist h1 {
   letter-spacing: 0.2em;
@@ -1230,6 +1236,7 @@ form input .submit-button {
 
 .start {
   display: block;
+  margin-top: 64px;
 }
 .start img {
   width: 100%;
@@ -1240,10 +1247,15 @@ form input .submit-button {
     display: grid;
     gap: 18px;
     grid-template-columns: 50% 50%;
-    margin: 0px 120px 0px 120px;
+    margin: 64px 120px 0px 120px;
   }
   .start .column {
     text-align: center;
     margin: auto;
+  }
+}
+@media (min-width: 992px) {
+  .start {
+    margin-top: 96px;
   }
 }

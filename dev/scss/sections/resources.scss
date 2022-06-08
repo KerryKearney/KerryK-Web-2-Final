@@ -68,6 +68,7 @@
 
 .start{
     display: block;
+    margin-top: 64px;
 
     img{
         width: 100%;
@@ -78,11 +79,15 @@
         display: grid;
         gap: 18px;
         grid-template-columns: 50% 50%;
-        margin: 0px 120px 0px 120px;
+        margin: 64px 120px 0px 120px;
 
         .column{
             text-align: center;
             margin: auto;
         }
+    }
+
+    @include lg{
+        margin-top: 96px;
     }
 }
